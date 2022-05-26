@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div class="container">
+    <div id="userinfo" class="row">
+        <label for="username">Please input User Name</label>
+        <input for="text" class="form-control" id="username" name="username" autocomplete="off">
+        <a class="btn btn-block" onclick="SetUsername()">Join</a>
+    </div>
+
+    <div id="messagearea" class="row" style="display:none;">
+        <div> Joined as: <b><span id="username">Not set</span></b></div>
+        <hr/>
+        <div class="row">
+            <div class="col-6">
+                <ul id="messagesList"></ul>
+            </div>
+        </div>
+        <hr/>
+        <input type="text" id="message" autocomplete="off"/>
+        <input type="button" id="sendButton" value="Send Message"/>
+    </div>
+</div>
+
+
